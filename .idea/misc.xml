@@ -30,10 +30,6 @@
   <component name="ProjectType">
     <option name="id" value="Android" />
   </component>
-  <component name="SvnConfiguration" myUseAcceleration="nothing">
-    <configuration useDefault="false">C:\Users\王志明\AppData\Roaming\Subversion</configuration>
-    <option name="UPDATE_LOCK_ON_DEMAND" value="true" />
-  </component>
   <component name="masterDetails">
     <states>
       <state key="ProjectJDKs.UI">

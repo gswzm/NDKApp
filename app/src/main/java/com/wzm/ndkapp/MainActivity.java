@@ -6,6 +6,16 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+/**
+ * 类名： MainActivity
+ * 时间：2017/11/10 9:44
+ * 描述：
+ * 修改人：
+ * 修改时间：
+ * 修改备注：
+ *
+ * @author wangzm
+*/
 public class MainActivity extends AppCompatActivity {
 
     // Used to load the 'native-lib' library on application startup.
@@ -32,11 +42,11 @@ public class MainActivity extends AppCompatActivity {
         tvAdd.setOnClickListener((v)->{
             tvAdd.setText(""+getAdd(getIntNum(etA.getText().toString()),getIntNum(etB.getText().toString())));
         });
-        Button BtnSin=(Button)findViewById(R.id.bt_sin);
+        Button btnSin=(Button)findViewById(R.id.bt_sin);
 
-        BtnSin.setText( ""+Math.sin(30));
-        BtnSin.setOnClickListener((v)->{
-           BtnSin.setText(""+getSin(Double.parseDouble(etSin.getText().toString())));
+        btnSin.setText( ""+Math.sin(30));
+        btnSin.setOnClickListener((v)->{
+           btnSin.setText(""+getSin(Double.parseDouble(etSin.getText().toString())));
         });
 
     }
@@ -48,7 +58,9 @@ public class MainActivity extends AppCompatActivity {
 
     public native int getAdd(int a,int b);
 
-    public native double getSin(double a);
+    public native double getSin(double sin);
+
+    public native double getCos(double cos);
 
     private int getIntNum(String str){
         return Integer.parseInt(str);

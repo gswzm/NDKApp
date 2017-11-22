@@ -25,8 +25,13 @@ double nResult(double x, double n)
 }
 
 extern "C"
-JNIEXPORT jint JNICALL
+JNIEXPORT jdouble JNICALL
 Java_com_wzm_ndkapp_MainActivity_getSin(JNIEnv *env, jobject instance, jdouble a) {
-
     return sin(a);
+}
+
+JNIEXPORT jstring
+Java_com_wzm_ndkapp_MainActivity_getCos(JNIEnv *env, jobject instance, jstring str){
+
+    return
 }
